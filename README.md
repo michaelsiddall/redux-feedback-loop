@@ -37,10 +37,10 @@ Display a list of the existing reflections. The most recently added reflection s
 
 - Update this README.md to describe the project in your own words
 - Deploy your project to Heroku
-- Improve the stying of the app using Material-UI cards, buttons, nav bar and icons.
+- Improve the stying of the app using Material-UI cards, buttons, nav bar and icons
 - Move your HTTP requests into sagas
-- Add the ability to update an existing reflection.
-- Move reflection topics into a separate table and use SQL JOINs.
+- Add the ability to update an existing reflection
+- Move reflection topics into a separate table and use SQL JOINs
 - Allow users to include an image with the reflection using [Filestack](https://www.filestack.com/)
 - Ability to filter reflections based on topic
 
