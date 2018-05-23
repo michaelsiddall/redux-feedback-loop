@@ -53,9 +53,8 @@ Display all of the existing feedback at the route `/admin`. The most recently ad
 
 - Update this README.md to describe the project in your own words
 - Improve the styling of the app using Material-UI theme, cards, snackbars, buttons, nav bar, and icons, and anything else you'd like.
+- Add the ability to update an existing feedback entry
 - Deploy your project to Heroku -- you'll need to read the special instructions for building and deploying with these apps! 
-- Add the ability to update an existing feedback
-- Move reflection topics into a separate table and use SQL JOINs
 
 
 > NOTE: These stretch goals are intended to be completed in order.
