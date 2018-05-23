@@ -1,22 +1,18 @@
--- Database should be reflection_board
-CREATE DATABASE "reflection_board";
+-- Database should be prime_feedback
+CREATE DATABASE "prime_feedback";
 
--- Switch to "reflection_board" before running the following
--- Table to store the reflections
-CREATE TABLE "reflection" (
+-- Switch to "prime_feedback" before making:
+-- Table to store the feedback
+CREATE TABLE "feedback" (
   "id" serial primary key,
-  "topic" varchar(120),
-  "description" varchar(480),
-  "bookmarked" boolean default false,
+  "feeling" INT not null,
+  "understanding" INT not null,
+  "support" INT not null,
+  "comments" text,
+  "flagged" boolean default false,
   "date" date not null default CURRENT_DATE
-);
+); 
 
 -- Sample reflection
-INSERT INTO "reflection" ("topic", "description")
-VALUES ('What went well?', 'Gave an ice breaker at public speaking practice.'),
-('Better next time?', 'Get more sleep.'),
-('What went well?', 'Built a full stack web application!'),
-('Better next time?', 'Use trello to manage tasks.');
-
-
--- Stretch goal: Move topics to a separate table
+INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
+VALUES (4, 4, 5, 'Doing Great!');
