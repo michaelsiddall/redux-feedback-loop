@@ -30,32 +30,34 @@ Create a multi-part form that allows users to leave feedback for today.
 There will be 4 views for the form parts.
 The parts:
 - How are you feeling today?
-![feeling](wireframes/page-one.png)
+![feeling](wireframes/feeling.png)
 - How well are you understanding the content?
-![understanding](wireframes/page-two.png)
+![understanding](wireframes/understanding.png)
 - How well are you being supported?
-![support](wireframes/page-three.png)
+![support](wireframes/supported.png)
 - Any comments you want to leave?
-![comments](wireframes/page-four.png)
+![comments](wireframes/comments.png)
 
-While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
+While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process as well as update the `Review` Component.
 
 
 ## THE REVIEW COMPONENT
 
-In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. The simplest could be another component on the DOM which shows the results of the current survey and a Submit button.
+In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. HITN: This will be your current redux values displayed on the DOM. 
+
+The simplest way could be another component on the DOM which shows the results of the current survey and a Submit button.
 
 ### Incomplete, Submit button is disabled:
 
-![comments](wireframes/review-component-inactive.png)
+![comments](wireframes/comments.png)
 
 ### Survey complete, Submit button is active:
 
-![comments](wireframes/review-component-active.png)
+![comments](wireframes/review.png)
 
 ## SUBMIT THE FEEDBACK
 
-The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. This submit button should only be active when all of the survey steps are complete.
+The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. **This submit button should only be active when all of the survey steps are complete.**
 
 When the submit button is clicked, save the submission in the database. The user should see a submission success page.
 
