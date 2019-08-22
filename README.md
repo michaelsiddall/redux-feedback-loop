@@ -30,6 +30,7 @@ npm run client
 
 Create a multi-part form that allows users to leave feedback for today. 
 There will be 4 views for the form parts.
+
 The parts:
 - How are you feeling today?
 ![feeling](wireframes/feeling.png)
@@ -40,31 +41,27 @@ The parts:
 - Any comments you want to leave?
 ![comments](wireframes/comments.png)
 
-While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process as well as update the `Review` Component.
+While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
 
+### Input Valiation
+
+Each step should only allow the user to advance to the next step if a score was provided.
+
+The `Comments` step does not need to be validated, an empty value is okay.
 
 ## THE REVIEW COMPONENT
 
-In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. HINT: This will be your current redux values displayed on the DOM. 
+The last step of the process will allow the user to review their feedback.
 
-The simplest way could be another component on the DOM which shows the results of the current survey and a Submit button.
-
-### Incomplete, Submit button is disabled:
-
-![comments](wireframes/comments.png)
-
-### Survey complete, Submit button is active:
-
-![comments](wireframes/review.png)
+![comments](wireframes/review-active.png)
 
 ## SUBMIT THE FEEDBACK
 
-The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. **This submit button should only be active when all of the survey steps are complete.**
+The `Review` step needs to have a submit button which will be clicked on to actually submit the completed feedback to the server.
 
-When the submit button is clicked, save the submission in the database. The user should see a submission success page.
+When the submit button is clicked, save the submission in the database. The user should see a submission success page. They can then click the button to take a new survey, which needs to reset all the data and go back to the first step.
 
 ![understanding](wireframes/page-five.png)
-
 
 
 ## STRETCH GOALS
