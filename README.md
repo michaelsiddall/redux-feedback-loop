@@ -45,17 +45,15 @@ While there is no nav bar, each part of the form should be at its own route. Cli
 
 ## THE REVIEW COMPONENT
 
-In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. HINT: This will be your current redux values displayed on the DOM. 
-
-The simplest way could be another component on the DOM which shows the results of the current survey and a Submit button.
+The last step of the process will allow the user to review their feedback.
 
 ### Incomplete, Submit button is disabled:
 
-![comments](wireframes/comments.png)
+![comments](wireframes/review-incomplete.png)
 
 ### Survey complete, Submit button is active:
 
-![comments](wireframes/review.png)
+![comments](wireframes/review-active.png)
 
 ## SUBMIT THE FEEDBACK
 
