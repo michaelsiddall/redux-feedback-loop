@@ -45,7 +45,7 @@ While there is no nav bar, each part of the form should be at its own route. Cli
 
 ### Input Valiation
 
-Each step should only allow the user to go to the next step if a score was provided.
+Each step should only allow the user to advance to the next step if a score was provided.
 
 The `Comments` step does not need to be validated, an empty value is okay.
 
