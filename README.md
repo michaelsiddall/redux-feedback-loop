@@ -30,6 +30,7 @@ npm run client
 
 Create a multi-part form that allows users to leave feedback for today. 
 There will be 4 views for the form parts.
+
 The parts:
 - How are you feeling today?
 ![feeling](wireframes/feeling.png)
@@ -42,6 +43,11 @@ The parts:
 
 While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process as well as update the `Review` Component.
 
+### Input Valiation
+
+Each step should only allow the user to go to the next step if a score was provided.
+
+The `Comments` step does not need to be validated, an empty value is okay.
 
 ## THE REVIEW COMPONENT
 
