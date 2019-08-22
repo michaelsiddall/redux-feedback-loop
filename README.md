@@ -53,22 +53,15 @@ The `Comments` step does not need to be validated, an empty value is okay.
 
 The last step of the process will allow the user to review their feedback.
 
-### Incomplete, Submit button is disabled:
-
-![comments](wireframes/review-incomplete.png)
-
-### Survey complete, Submit button is active:
-
 ![comments](wireframes/review-active.png)
 
 ## SUBMIT THE FEEDBACK
 
-The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. **This submit button should only be active when all of the survey steps are complete.**
+The `Review` step needs to have a submit button which will be clicked on to actually submit the completed feedback to the server.
 
-When the submit button is clicked, save the submission in the database. The user should see a submission success page.
+When the submit button is clicked, save the submission in the database. The user should see a submission success page. They can then click the button to take a new survey, which needs to reset all the data and go back to the first step.
 
 ![understanding](wireframes/page-five.png)
-
 
 
 ## STRETCH GOALS
