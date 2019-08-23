@@ -43,15 +43,15 @@ The parts:
 
 While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
 
-### Input Valiation
+### Input Validation
 
-Each step should only allow the user to advance to the next step if a score was provided.
+Each step should only allow the user to advance to the next step if a score was provided. Be sure to tell the user in some way that a value must be provided.
 
 The `Comments` step does not need to be validated, an empty value is okay.
 
 ## THE REVIEW COMPONENT
 
-The last step of the process will allow the user to review their feedback.
+The last step of the process will allow the user to review their feedback. Users are not able to change their input on this step or go back for Base Mode. 
 
 ![comments](wireframes/review-active.png)
 
@@ -67,6 +67,11 @@ When the submit button is clicked, save the submission in the database. The user
 ## STRETCH GOALS
 
 > NOTE: These stretch goals are intended to be completed in order.
+
+### UPDATE SCORES
+
+All the user to go back to a previous step and change their score. You still need to disallow empty values!
+
 
 ### ADMIN SECTION
 
