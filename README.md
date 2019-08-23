@@ -70,7 +70,7 @@ When the submit button is clicked, save the submission in the database. The user
 
 ### UPDATE SCORES
 
-All the user to go back to a previous step and change their score. You still need to disallow empty values!
+Allow the user to go back to a previous step and change their score. You still need to disallow empty values!
 
 
 ### ADMIN SECTION
