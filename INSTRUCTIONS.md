@@ -84,4 +84,4 @@ Improve the styling of the app using Material-UI. This might inclued cards, snac
 - Add the ability to flag an existing feedback entry for further review on the /admin view.
 
 ### DEPLOY
-Deploy your project to Heroku -- you'll need to read the special instructions for building and deploying with React. 
+Deploy your project to Heroku. You'll need to read the special instructions for building and deploying with React. 
