@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 class Feeling extends Component {
   state = {
     feeling: null,
+  };
+
+  onNext = () => {
+    console.log("in onNext");
+    console.log("this.props.history", this.props.history);
+    this.props.history.push("/understanding");
   };
   render() {
     return (
@@ -17,10 +24,10 @@ class Feeling extends Component {
           min="1"
           max="5"
         ></input>
-        <button>Next</button>
+        <button onClick={this.onNext}>Next</button>
       </section>
     );
   }
 }
 
-export default Feeling;
+export default withRouter(Feeling);

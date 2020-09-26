@@ -19,10 +19,10 @@ class App extends Component {
           </header>
           <br />
           <main>
-            <Route path="/">
+            <Route path="/" exact>
               <Feeling />
             </Route>
-            <Route path="/understanding">
+            <Route path="/understanding" exact>
               <Understanding />
             </Route>
           </main>
