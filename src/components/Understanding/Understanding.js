@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class Feeling extends Component {
+class Understanding extends Component {
   state = {
     feeling: null,
+    understanding: null,
   };
   render() {
     return (
       <section>
-        <h1>How are you feeling today?</h1>
+        <h1>How well are you understanding the content?</h1>
         <br />
         <h5>Feeling?</h5>
         <input
@@ -23,4 +24,4 @@ class Feeling extends Component {
   }
 }
 
-export default Feeling;
+export default Understanding;
