@@ -10,7 +10,11 @@ class Feeling extends Component {
   onNext = () => {
     console.log("in onNext");
     console.log("this.props.history", this.props.history);
-    this.props.history.push("/understanding");
+    if (isNaN("numberSelect") || "numberSelect" < 1 || "numberSelect" > 5) {
+      alert("Please select a number 1-5");
+    } else {
+      this.props.history.push("/understanding");
+    }
   };
   render() {
     return (
@@ -19,10 +23,12 @@ class Feeling extends Component {
         <br />
         <h5>Feeling?</h5>
         <input
+          id="numberSelect"
           type="number"
           placeholder="1-5, 1 = terrible 5 = great"
           min="1"
           max="5"
+          required
         ></input>
         <button onClick={this.onNext}>Next</button>
       </section>
