@@ -27,20 +27,19 @@ class Feeling extends Component {
     return (
       <section>
         <h1>How are you feeling today?</h1>
-        <form>
-          <br />
-          <h5>Feeling?</h5>
-          <input
-            required
-            id="numberSelect"
-            type="number"
-            placeholder="1-5, 1 = terrible 5 = great"
-            min="1"
-            max="5"
-            onChange={this.onChangeFeeling}
-          ></input>
-          <button onClick={this.onNext}>Next</button>
-        </form>
+
+        <br />
+        <h5>Feeling?</h5>
+        <input
+          required
+          id="numberSelect"
+          type="number"
+          placeholder="1-5, 1 = terrible 5 = great"
+          min="1"
+          max="5"
+          onChange={this.onChangeFeeling}
+        ></input>
+        <button onClick={this.onNext}>Next</button>
       </section>
     );
   }

@@ -13,10 +13,12 @@ const initialFeedback = {
   feeling: "",
   understanding: "",
   support: "",
-  comments: "",
+  comment: "",
 };
 
 const feedbackCategory = (state = initialFeedback, action) => {
+  console.log("in feedbackCategory", state, action);
+
   if (action.type === "SET_FEELING") {
     return {
       ...state,

@@ -6,12 +6,12 @@ const router = require("./modules/router");
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for angular requests
-app.use("/router", router);
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("build"));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-
+app.use("/feedback", router);
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
   console.log("Listening on port: ", PORT);

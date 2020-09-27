@@ -4,19 +4,19 @@ const pool = require("./pool");
 
 router.post("/", (req, res) => {
   console.log("/POST hit", req.body);
-  const queryText = `INSERT INTO feedback (feeling, understanding, support, comments) VALUES ($1, $2, $3)`;
+  const queryText = `INSERT INTO feedback (feeling, understanding, support, comments) VALUES ($1, $2, $3, $4)`;
   pool
     .query(queryText, [
       req.body.feeling,
       req.body.understanding,
       req.body.support,
-      req.body.comments,
+      req.body.comment,
     ])
     .then((results) => {
-      res.send(201);
+      res.sendStatus(201);
     })
     .catch((err) => {
-      console.err(err);
+      console.error(err);
       res.sendStatus(500);
     });
 });

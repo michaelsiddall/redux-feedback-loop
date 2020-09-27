@@ -11,11 +11,11 @@ class Comment extends Component {
     this.props.history.push("/review");
   };
 
-  handleChange = (event, property) => {
-    console.log("in handleChangeFor:", property, event.target.value);
-    this.setState({
-      ...this.state,
-      [property]: event.target.value,
+  onChangeComment = (event) => {
+    console.log("payload is", event.target.value);
+    this.props.dispatch({
+      type: "SET_COMMENT",
+      payload: event.target.value,
     });
   };
   render() {
@@ -27,8 +27,8 @@ class Comment extends Component {
 
         <input
           type="text"
-          placeholder="Comments"
-          onChange={(event) => this.handleChange(event, "Comments")}
+          placeholder="Comment"
+          onChange={this.onChangeComment}
         ></input>
         <button onClick={this.onNext}>Next</button>
       </section>
