@@ -5,10 +5,12 @@ import { connect } from "react-redux";
 class Support extends Component {
   onNext = () => {
     console.log("in onNext");
-    console.log("this.props.history", this.props.history);
-    this.props.history.push("/comment");
+    if (this.props.reduxStore.feedbackCategory.support === "") {
+      alert("Please select a number 1-5");
+    } else {
+      this.props.history.push("/comment");
+    }
   };
-
   onChangeSupport = (event) => {
     console.log("payload is", event.target.value);
     this.props.dispatch({

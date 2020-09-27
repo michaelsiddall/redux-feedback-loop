@@ -5,8 +5,11 @@ import { connect } from "react-redux";
 class Understanding extends Component {
   onNext = () => {
     console.log("in onNext");
-    console.log("this.props.history", this.props.history);
-    this.props.history.push("/support");
+    if (this.props.reduxStore.feedbackCategory.understanding === "") {
+      alert("Please select a number 1-5");
+    } else {
+      this.props.history.push("/support");
+    }
   };
   onChangeUnderstanding = (event) => {
     console.log("payload is", event.target.value);

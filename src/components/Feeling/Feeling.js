@@ -6,8 +6,7 @@ class Feeling extends Component {
   onNext = () => {
     console.log("in onNext");
     console.log("this.props.history", this.props.history);
-
-    if (this.props.reduxStore.feeling === "") {
+    if (this.props.reduxStore.feedbackCategory.feeling === "") {
       alert("Please select a number 1-5");
     } else {
       this.props.history.push("/understanding");
