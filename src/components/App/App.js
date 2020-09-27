@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import { Route, HashRouter as Router, Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
+import Comment from "../Comment/Comment";
+import Review from "../Review/Review";
 
 class App extends Component {
   render() {
@@ -29,6 +32,12 @@ class App extends Component {
             <Route path="/support" exact>
               <Support />
             </Route>
+            <Route path="/comment" exact>
+              <Comment />
+            </Route>
+            <Route path="/review" exact>
+              <Review />
+            </Route>
           </main>
         </div>
       </Router>
@@ -36,4 +45,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (reduxStore) => ({
+  reduxStore,
+});
+
+export default connect(mapStateToProps)(App);
