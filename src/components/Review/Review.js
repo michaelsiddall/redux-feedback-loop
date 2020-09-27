@@ -4,6 +4,12 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
 class Review extends Component {
+  onNext = () => {
+    console.log("in onNext");
+    console.log("this.props.history", this.props.history);
+    this.props.history.push("/confirm");
+  };
+
   onSubmit = () => {
     console.log("in onSubmit");
     axios({
@@ -13,6 +19,7 @@ class Review extends Component {
     })
       .then((response) => {
         console.log("back from POST with:", response);
+        this.onNext();
       })
       .catch((err) => {
         console.log(err);

@@ -9,6 +9,7 @@ import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
 import Comment from "../Comment/Comment";
 import Review from "../Review/Review";
+import Confirmation from "../Confirmation/Confirmation";
 
 class App extends Component {
   render() {
@@ -37,6 +38,9 @@ class App extends Component {
             </Route>
             <Route path="/review" exact>
               <Review />
+            </Route>
+            <Route path="/confirm" exact>
+              <Confirmation />
             </Route>
           </main>
         </div>
