@@ -35,15 +35,17 @@ class Review extends Component {
       <section>
         <h1>Review Your Feedback</h1>
         <br />
-        <h3>Feelings:{this.props.reduxStore.feeling} </h3>
-
-        <h3>Understanding: {this.props.reduxStore.understanding} </h3>
-
-        <h3>Support:{this.props.reduxStore.support} </h3>
-
-        <h3>Comment:{this.props.reduxStore.comment} </h3>
-
-        <button onClick={this.onSubmit}>Submit</button>
+        <h2>Feelings:</h2>
+        <h3>{this.props.reduxStore.feeling}</h3>
+        <h2>Understanding:</h2>
+        <h3>{this.props.reduxStore.understanding} </h3>
+        <h2>Support:</h2>
+        <h3>{this.props.reduxStore.support}</h3>
+        <h2>Comment:</h2>
+        <h3> {this.props.reduxStore.comment} </h3>
+        <button id="submitBtn" onClick={this.onSubmit}>
+          Submit
+        </button>
       </section>
     );
   }

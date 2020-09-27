@@ -12,7 +12,9 @@ class Confirmation extends Component {
     return (
       <section>
         <h1>Thank you for your feedback!</h1>
-        <button onClick={this.onLeaveNew}>Leave New Feedback</button>
+        <button id="newFeedbackBtn" onClick={this.onLeaveNew}>
+          Leave New Feedback
+        </button>
       </section>
     );
   }

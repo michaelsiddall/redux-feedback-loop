@@ -1,0 +1,20 @@
+#commentBox {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #999999;
+  padding: 5px;
+  overflow-wrap: normal;
+  text-align: center;
+  font-size: 17px;
+}
+
+#nextCommentBtn {
+  margin: 30px;
+  height: 50px;
+  width: 100px;
+  background: #e5e8c9;
+  font-style: bold;
+  font-size: 18px;
+}

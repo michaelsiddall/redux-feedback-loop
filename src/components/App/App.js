@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
+import "../Feeling/Feeling.css";
+import "../Understanding/Understanding.css";
+import "../Comment/Comment.css";
+import "../Support/Support.css";
+import "../Confirmation/Confirmation.css";
+import "../Review/Review.css";
+
 import { Route, HashRouter as Router } from "react-router-dom";
 import { connect } from "react-redux";
 

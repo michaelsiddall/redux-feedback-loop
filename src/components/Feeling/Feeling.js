@@ -31,14 +31,16 @@ class Feeling extends Component {
         <h5>Feeling?</h5>
         <input
           required
-          id="numberSelect"
+          id="inputBox"
           type="number"
-          placeholder="1-5, 1 = terrible 5 = great"
+          placeholder="1 = terrible 5 = great"
           min="1"
           max="5"
           onChange={this.onChangeFeeling}
         ></input>
-        <button onClick={this.onNext}>Next</button>
+        <button id="nextFeelingBtn" onClick={this.onNext}>
+          Next
+        </button>
       </section>
     );
   }

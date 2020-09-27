@@ -27,13 +27,16 @@ class Support extends Component {
         <h5>Support?</h5>
 
         <input
+          id="inputBox"
           type="number"
-          placeholder="1-5, 1 = terrible 5 = great"
+          placeholder="1 = terrible 5 = great"
           min="1"
           max="5"
           onChange={this.onChangeSupport}
         ></input>
-        <button onClick={this.onNext}>Next</button>
+        <button id="nextSupportBtn" onClick={this.onNext}>
+          Next
+        </button>
       </section>
     );
   }

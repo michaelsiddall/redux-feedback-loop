@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import "../Comment/Comment.css";
 
 class Comment extends Component {
   onNext = () => {
@@ -25,11 +26,14 @@ class Comment extends Component {
         <h5>Comments?</h5>
 
         <input
+          id="commentBox"
           type="text"
-          placeholder="Comment"
+          placeholder="Please leave your comments here"
           onChange={this.onChangeComment}
         ></input>
-        <button onClick={this.onNext}>Next</button>
+        <button id="nextCommentBtn" onClick={this.onNext}>
+          Next
+        </button>
       </section>
     );
   }
