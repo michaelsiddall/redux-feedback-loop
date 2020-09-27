@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-// import axios from "axios";
 import { withRouter } from "react-router-dom";
-
 import { connect } from "react-redux";
 
 class Feeling extends Component {
@@ -24,6 +22,8 @@ class Feeling extends Component {
     });
   };
   render() {
+    console.log("state", this.props.reduxState);
+
     return (
       <section>
         <h1>How are you feeling today?</h1>

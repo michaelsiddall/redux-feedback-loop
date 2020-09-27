@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
 import { withRouter } from "react-router-dom";
-import Feeling from "../Feeling/Feeling";
 import { connect } from "react-redux";
 
 class Understanding extends Component {
